@@ -15,15 +15,41 @@ override.
 
 ```bash
 uv sync
-cp .env.example .env      # set LLM_MODEL and the matching provider key
-uv run langgraph dev      # opens LangGraph Studio
+cp .env.example .env                      # set LLM_MODEL and the matching provider key
+
+uv run streamlit run streamlit_app.py     # the chat UI
+uv run langgraph dev                      # or LangGraph Studio, for debugging
 ```
 
 No ServiceNow instance is needed. It runs against fixtures by default.
 
 ```bash
-uv run pytest             # 74 tests, no API key required
+uv run pytest             # 82 tests, no API key required
 ```
+
+## The UI
+
+`streamlit_app.py` is a chat window with the two approval moments surfaced as
+buttons. They look alike on screen and work differently underneath, which is
+worth knowing before changing either:
+
+**Choosing a referenced record** is *not* an interrupt. The agent asks in
+conversation and the candidates it offered sit in `pending_lookup` on the state;
+the UI renders them as buttons showing what distinguishes them -- environment,
+support group, criticality -- so the production and development twins are
+visibly different things. Pressing one sends an ordinary message naming the
+sys_id, so the choice still goes through `select_reference` and exactly the same
+validation as a typed answer. Keeping lookups out of the interrupt machinery is
+what lets the agent narrow a search or ask a question of its own rather than
+being forced to stop dead on every one.
+
+**Submitting** is a real LangGraph interrupt. The graph stops inside
+`submit_change`, the chat input is disabled, and the whole change is laid out
+with each value's provenance, the findings still open, and the exact Table API
+payload in an expander. Create / keep editing / cancel resume the graph with the
+user's decision. Nothing reaches ServiceNow until then.
+
+Threads are kept in `.local/threads.sqlite`, so a change survives a restart.
 
 ## What it does
 
@@ -85,6 +111,7 @@ src/change_agent/
   prompts.py       the system prompt
   middleware.py    re-states the live change to the model every turn
   graph.py         the assembled agent
+streamlit_app.py   chat UI, with both approval steps as buttons
   rules/           base.py, catalog.py (R001-R013), critic.py (the rubric pass)
   tools/           fields.py, references.py, review.py, submit.py
   servicenow/      Protocol, fixture-backed fake, Table API client, factory

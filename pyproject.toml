@@ -11,9 +11,11 @@ dependencies = [
     "langchain-core>=1.6,<2",
     "langchain-openai>=1.6.2",
     "langgraph>=1.2,<2",
+    "langgraph-checkpoint-sqlite>=3.1.1",
     "pydantic>=2.13,<3",
     "python-dotenv>=1.2.3",
     "rapidfuzz>=3.14.6",
+    "streamlit>=1.63.0",
 ]
 
 [dependency-groups]
