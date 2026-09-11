@@ -1,0 +1,37 @@
+{
+  "change_request.type": [
+    {"value": "normal", "label": "Normal"},
+    {"value": "standard", "label": "Standard"},
+    {"value": "emergency", "label": "Emergency"}
+  ],
+  "change_request.category": [
+    {"value": "hardware", "label": "Hardware"},
+    {"value": "software", "label": "Software"},
+    {"value": "network", "label": "Network"},
+    {"value": "database", "label": "Database"},
+    {"value": "application", "label": "Application"},
+    {"value": "other", "label": "Other"}
+  ],
+  "change_request.risk": [
+    {"value": "very_high", "label": "Very High"},
+    {"value": "high", "label": "High"},
+    {"value": "moderate", "label": "Moderate"},
+    {"value": "low", "label": "Low"}
+  ],
+  "change_request.impact": [
+    {"value": "1", "label": "1 - High"},
+    {"value": "2", "label": "2 - Medium"},
+    {"value": "3", "label": "3 - Low"}
+  ],
+  "change_request.urgency": [
+    {"value": "1", "label": "1 - High"},
+    {"value": "2", "label": "2 - Medium"},
+    {"value": "3", "label": "3 - Low"}
+  ],
+  "change_request.priority": [
+    {"value": "1", "label": "1 - Critical"},
+    {"value": "2", "label": "2 - High"},
+    {"value": "3", "label": "3 - Moderate"},
+    {"value": "4", "label": "4 - Low"}
+  ]
+}

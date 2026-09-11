@@ -1,0 +1,12 @@
+[
+  {"sys_id": "sv00000000000000000000000000001a", "name": "Online Banking",
+   "context": {"criticality": "1 - most critical", "owner": "Retail Banking"}},
+  {"sys_id": "sv00000000000000000000000000001b", "name": "Online Banking - Mobile",
+   "context": {"criticality": "1 - most critical", "owner": "Retail Banking"}},
+  {"sys_id": "sv00000000000000000000000000002a", "name": "Payments Processing",
+   "context": {"criticality": "1 - most critical", "owner": "Payments"}},
+  {"sys_id": "sv00000000000000000000000000003a", "name": "Corporate Email",
+   "context": {"criticality": "2 - somewhat critical", "owner": "IT Services"}},
+  {"sys_id": "sv00000000000000000000000000004a", "name": "Internal HR Portal",
+   "context": {"criticality": "3 - less critical", "owner": "Human Resources"}}
+]

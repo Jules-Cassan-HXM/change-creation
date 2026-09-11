@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "change_copilot": "change_agent.graph:graph"
+  },
+  "env": ".env"
+}

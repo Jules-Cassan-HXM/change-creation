@@ -1,0 +1,18 @@
+[
+  {"sys_id": "us00000000000000000000000000001a", "name": "Amara Diallo",
+   "context": {"email": "amara.diallo@corp.example", "group": "Unix Platform Team", "title": "Platform Manager"}},
+  {"sys_id": "us00000000000000000000000000002a", "name": "Piotr Nowak",
+   "context": {"email": "piotr.nowak@corp.example", "group": "Windows Platform Team", "title": "Windows Lead"}},
+  {"sys_id": "us00000000000000000000000000003a", "name": "Sofia Ramirez",
+   "context": {"email": "sofia.ramirez@corp.example", "group": "Database Administration", "title": "DBA Lead"}},
+  {"sys_id": "us00000000000000000000000000004a", "name": "Kenji Watanabe",
+   "context": {"email": "kenji.watanabe@corp.example", "group": "Network Operations", "title": "Network Engineer"}},
+  {"sys_id": "us00000000000000000000000000005a", "name": "Lea Fontaine",
+   "context": {"email": "lea.fontaine@corp.example", "group": "Payments Engineering", "title": "Engineering Manager"}},
+  {"sys_id": "us00000000000000000000000000006a", "name": "Tom Becker",
+   "context": {"email": "tom.becker@corp.example", "group": "Platform Engineering", "title": "SRE"}},
+  {"sys_id": "us00000000000000000000000000007a", "name": "Nadia Haddad",
+   "context": {"email": "nadia.haddad@corp.example", "group": "Service Desk", "title": "Service Desk Manager"}},
+  {"sys_id": "us00000000000000000000000000008a", "name": "Thomas Beckett",
+   "context": {"email": "thomas.beckett@corp.example", "group": "Payments Engineering", "title": "Developer"}}
+]

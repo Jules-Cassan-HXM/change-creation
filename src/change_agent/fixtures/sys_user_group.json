@@ -1,0 +1,22 @@
+[
+  {"sys_id": "gr00000000000000000000000000001a", "name": "Unix Platform Team",
+   "context": {"manager": "Amara Diallo", "email": "unix-platform@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000001b", "name": "Unix Platform Team - L2",
+   "context": {"manager": "Amara Diallo", "email": "unix-l2@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000002a", "name": "Windows Platform Team",
+   "context": {"manager": "Piotr Nowak", "email": "windows-platform@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000003a", "name": "Database Administration",
+   "aliases": ["DBA", "DBA team"],
+   "context": {"manager": "Sofia Ramirez", "email": "dba@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000004a", "name": "Network Operations",
+   "aliases": ["NetOps"],
+   "context": {"manager": "Kenji Watanabe", "email": "netops@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000005a", "name": "Payments Engineering",
+   "context": {"manager": "Lea Fontaine", "email": "payments-eng@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000005b", "name": "Payments Engineering (Legacy)",
+   "context": {"manager": "Lea Fontaine", "email": "payments-legacy@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000006a", "name": "Platform Engineering",
+   "context": {"manager": "Tom Becker", "email": "platform-eng@corp.example"}},
+  {"sys_id": "gr00000000000000000000000000007a", "name": "Service Desk",
+   "context": {"manager": "Nadia Haddad", "email": "servicedesk@corp.example"}}
+]
